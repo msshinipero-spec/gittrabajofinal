@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bandeja de reportes · Tablón ULima</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-mark"></span><span>Tablón ULima</span></a>
+    <span class="admin-tag">PANEL DE ADMINISTRACIÓN</span>
+    <div class="global-search"><input type="search" placeholder="Buscar por aviso, usuario o código…"></div>
+    <span class="role-chip">ADMINISTRADOR</span>
+    <div class="profile"><span class="avatar">JM</span><span>Julio Mendoza ▾</span></div>
+  </div>
+</header>
+<nav class="admin-nav">
+  <div class="admin-nav-inner">
+    <div class="nav-links">
+      <a class="nav-link active" href="index.html">Reportes</a>
+      <a class="nav-link " href="usuarios.html">Usuarios</a>
+      <a class="nav-link " href="metricas.html">Tablero de métricas</a>
+      <a class="nav-link" href="#">Categorías y cursos</a>
+      <a class="nav-link" href="#">Normas del tablón</a>
+    </div>
+    <div class="nav-note">3 reportes nuevos por revisar</div>
+  </div>
+</nav>
+
+<main class="page">
+  <div class="page-header">
+    <div>
+      <h1 class="page-title">Bandeja de reportes</h1>
+      <div class="page-subtitle">7 reportes · 3 nuevos · tiempo medio de resolución 1.4 días</div>
+    </div>
+    <div class="toolbar-right">
+      <select class="select"><option>Últimos 30 días</option></select>
+      <select class="select"><option>Tipo: Todos</option></select>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <div class="tabs">
+      <button class="tab active">Todos · 7</button>
+      <button class="tab">Nuevos · 3</button>
+      <button class="tab">En revisión · 2</button>
+      <button class="tab">Resueltos · 1</button>
+      <button class="tab">Descartados · 1</button>
+    </div>
+    <div class="secondary-line">Ordenado por antigüedad del reporte</div>
+  </div>
+
+  <div class="table-wrap">
+    <table id="reportsTable">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Elemento reportado</th>
+          <th>Motivo</th>
+          <th>Reportante</th>
+          <th>Fecha</th>
+          <th>Estado</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-status="Nuevo" class="report-row">
+          <td class="primary-cell">R-1042</td>
+          <td><div class="primary-cell">Laptop gamer casi nueva — precio de remate</div><div class="secondary-line">Aviso de Kevin Bustamante Ruiz</div></td>
+          <td>Posible estafa o precio sospechoso</td>
+          <td>Diego Alonso Vargas Huamán</td>
+          <td>04/09/2026</td>
+          <td class="status-cell"><span class="status status-new">Nuevo</span></td>
+          <td><a class="report-action action-review" href="reporte.html">Revisar</a></td>
+        </tr>
+        <tr data-status="Nuevo" class="report-row">
+          <td class="primary-cell">R-1041</td>
+          <td><div class="primary-cell">Kevin Bustamante Ruiz</div><div class="secondary-line">Perfil de usuario · 3 reportes acumulados</div></td>
+          <td>Pide pagos fuera del campus</td>
+          <td>Milagros Flores Ttito</td>
+          <td>04/09/2026</td>
+          <td class="status-cell"><span class="status status-new">Nuevo</span></td>
+          <td><a class="report-action action-review" href="reporte.html">Revisar</a></td>
+        </tr>
+        <tr data-status="Nuevo" class="report-row">
+          <td class="primary-cell">R-1039</td>
+          <td><div class="primary-cell">Apuntes completos de Estadística Aplicada</div><div class="secondary-line">Aviso de Renzo Cárdenas Vílchez</div></td>
+          <td>Publicación duplicada</td>
+          <td>Lucía Ramírez Ccahuana</td>
+          <td>03/09/2026</td>
+          <td class="status-cell"><span class="status status-new">Nuevo</span></td>
+          <td><a class="report-action action-review" href="reporte.html">Revisar</a></td>
+        </tr>
+        <tr data-status="En revisión" class="report-row">
+          <td class="primary-cell">R-1035</td>
+          <td><div class="primary-cell">Mandil de laboratorio con manchas</div><div class="secondary-line">Aviso de Sofía Bermúdez Chávez</div></td>
+          <td>El producto no corresponde al aviso</td>
+          <td>Andrés Castillo Paredes</td>
+          <td>01/09/2026</td>
+          <td class="status-cell"><span class="status status-review">En revisión</span></td>
+          <td><a class="report-action action-continue" href="reporte.html">Continuar</a></td>
+        </tr>
+        <tr data-status="En revisión" class="report-row">
+          <td class="primary-cell">R-1030</td>
+          <td><div class="primary-cell">Joaquín Tapia Salazar</div><div class="secondary-line">Perfil de usuario</div></td>
+          <td>Lenguaje inapropiado en el hilo</td>
+          <td>Paola Zegarra Ibáñez</td>
+          <td>29/08/2026</td>
+          <td class="status-cell"><span class="status status-review">En revisión</span></td>
+          <td><a class="report-action action-continue" href="reporte.html">Continuar</a></td>
+        </tr>
+        <tr data-status="Resuelto" class="report-row">
+          <td class="primary-cell">R-1022</td>
+          <td><div class="primary-cell">Calculadora gráfica sin cargador</div><div class="secondary-line">Aviso retirado el 26/08/2026</div></td>
+          <td>El producto no corresponde al aviso</td>
+          <td>Carla Huamaní Bravo</td>
+          <td>24/08/2026</td>
+          <td class="status-cell"><span class="status status-resolved">Resuelto</span></td>
+          <td><a class="report-action action-view" href="reporte.html">Ver</a></td>
+        </tr>
+        <tr data-status="Descartado" class="report-row">
+          <td class="primary-cell">R-1018</td>
+          <td><div class="primary-cell">Separatas de Programación Web</div><div class="secondary-line">Aviso de Iván Palomino Rojas</div></td>
+          <td>Otro motivo</td>
+          <td>Sebastián Ochoa Núñez</td>
+          <td>21/08/2026</td>
+          <td class="status-cell"><span class="status status-dismissed">Descartado</span></td>
+          <td><a class="report-action action-view" href="reporte.html">Ver</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="pagination"><span>Mostrando 7 de 7 reportes</span><button class="page-btn">‹</button><button class="page-btn active">1</button><button class="page-btn">›</button></div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>Universidad de Lima · Panel de administración · Campus Monterrico</div>
+    <div class="footer-links">
+      <a href="#">Normas del tablón</a>
+      <a href="#">Bitácora de moderación</a>
+      <a href="mailto:tablon@ulima.edu.pe">tablon@ulima.edu.pe</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

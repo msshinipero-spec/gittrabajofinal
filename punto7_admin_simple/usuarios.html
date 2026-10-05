@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gestión de usuarios · Tablón ULima</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-mark"></span><span>Tablón ULima</span></a>
+    <span class="admin-tag">PANEL DE ADMINISTRACIÓN</span>
+    <div class="global-search"><input type="search" placeholder="Buscar por nombre o correo…"></div>
+    <span class="role-chip">ADMINISTRADOR</span>
+    <div class="profile"><span class="avatar">JM</span><span>Julio Mendoza ▾</span></div>
+  </div>
+</header>
+<nav class="admin-nav">
+  <div class="admin-nav-inner">
+    <div class="nav-links">
+      <a class="nav-link " href="index.html">Reportes</a>
+      <a class="nav-link active" href="usuarios.html">Usuarios</a>
+      <a class="nav-link " href="metricas.html">Tablero de métricas</a>
+      <a class="nav-link" href="#">Categorías y cursos</a>
+      <a class="nav-link" href="#">Normas del tablón</a>
+    </div>
+    <div class="nav-note"></div>
+  </div>
+</nav>
+
+<main class="page">
+  <div class="page-header">
+    <div>
+      <h1 class="page-title">Usuarios</h1>
+      <div class="page-subtitle">248 cuentas · 243 activas · 3 bloqueadas · 5 con reportes</div>
+    </div>
+    <div class="toolbar-right">
+      <select class="select"><option>Todas las carreras</option></select>
+      <select class="select"><option>Reputación: cualquiera</option></select>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <div class="tabs">
+      <button class="tab active">Todos · 248</button>
+      <button class="tab">Activos · 243</button>
+      <button class="tab">Con reportes · 5</button>
+      <button class="tab">Bloqueados · 3</button>
+    </div>
+    <input id="userSearch" class="input" type="search" placeholder="Buscar en la tabla…">
+  </div>
+
+  <div class="table-wrap">
+    <table id="usersTable">
+      <thead><tr><th>Usuario</th><th>Correo institucional</th><th>Carrera</th><th>Avisos</th><th>Acuerdos</th><th>Reputación</th><th>Estado</th><th></th></tr></thead>
+      <tbody>
+      <tr class="" data-user="rosa maría quispe ríos 20201234@aloe.ulima.edu.pe administración" data-status="Activa">
+        <td class="primary-cell">Rosa María Quispe Ríos</td><td>20201234@aloe.ulima.edu.pe</td><td>Administración</td><td>6</td><td>12</td><td>4.8 ★</td>
+        <td><span class="status status-active">Activa</span></td>
+        <td><button class="btn btn-tertiary">Acciones ▾</button></td>
+      </tr>
+      <tr class="" data-user="andrés castillo paredes 20195678@aloe.ulima.edu.pe ing. industrial" data-status="Activo">
+        <td class="primary-cell">Andrés Castillo Paredes</td><td>20195678@aloe.ulima.edu.pe</td><td>Ing. Industrial</td><td>2</td><td>9</td><td>4.9 ★</td>
+        <td><span class="status status-active">Activo</span></td>
+        <td><button class="btn btn-tertiary">Acciones ▾</button></td>
+      </tr>
+      <tr class="" data-user="milagros flores ttito 20213344@aloe.ulima.edu.pe ing. de sistemas" data-status="Activa">
+        <td class="primary-cell">Milagros Flores Ttito</td><td>20213344@aloe.ulima.edu.pe</td><td>Ing. de Sistemas</td><td>4</td><td>7</td><td>5.0 ★</td>
+        <td><span class="status status-active">Activa</span></td>
+        <td><button class="btn btn-tertiary">Acciones ▾</button></td>
+      </tr>
+      <tr class="" data-user="lucía ramírez ccahuana 20208899@aloe.ulima.edu.pe derecho" data-status="Activa">
+        <td class="primary-cell">Lucía Ramírez Ccahuana</td><td>20208899@aloe.ulima.edu.pe</td><td>Derecho</td><td>1</td><td>5</td><td>4.7 ★</td>
+        <td><span class="status status-active">Activa</span></td>
+        <td><button class="btn btn-tertiary">Acciones ▾</button></td>
+      </tr>
+      <tr class="row-highlight" data-user="kevin bustamante ruiz 20226677@aloe.ulima.edu.pe comunicación" data-status="3 reportes">
+        <td class="primary-cell">Kevin Bustamante Ruiz</td><td>20226677@aloe.ulima.edu.pe</td><td>Comunicación</td><td>3</td><td>1</td><td>3.1 ★</td>
+        <td><span class="status status-review">3 reportes</span></td>
+        <td><button class="btn btn-tertiary">Acciones ▾</button></td>
+      </tr>
+      <tr class="" data-user="diego alonso vargas huamán 20204455@aloe.ulima.edu.pe ing. de sistemas" data-status="Activo">
+        <td class="primary-cell">Diego Alonso Vargas Huamán</td><td>20204455@aloe.ulima.edu.pe</td><td>Ing. de Sistemas</td><td>0</td><td>4</td><td>4.6 ★</td>
+        <td><span class="status status-active">Activo</span></td>
+        <td><button class="btn btn-tertiary">Acciones ▾</button></td>
+      </tr>
+      <tr class="" data-user="carla huamaní bravo 20199911@aloe.ulima.edu.pe arquitectura" data-status="Activa">
+        <td class="primary-cell">Carla Huamaní Bravo</td><td>20199911@aloe.ulima.edu.pe</td><td>Arquitectura</td><td>2</td><td>8</td><td>4.8 ★</td>
+        <td><span class="status status-active">Activa</span></td>
+        <td><button class="btn btn-tertiary">Acciones ▾</button></td>
+      </tr>
+      <tr class="" data-user="iván palomino rojas 20187766@aloe.ulima.edu.pe economía" data-status="Activo">
+        <td class="primary-cell">Iván Palomino Rojas</td><td>20187766@aloe.ulima.edu.pe</td><td>Economía</td><td>5</td><td>10</td><td>4.5 ★</td>
+        <td><span class="status status-active">Activo</span></td>
+        <td><button class="btn btn-tertiary">Acciones ▾</button></td>
+      </tr>
+      <tr class="" data-user="paola zegarra ibáñez 20215522@aloe.ulima.edu.pe arquitectura" data-status="Activa">
+        <td class="primary-cell">Paola Zegarra Ibáñez</td><td>20215522@aloe.ulima.edu.pe</td><td>Arquitectura</td><td>3</td><td>6</td><td>4.4 ★</td>
+        <td><span class="status status-active">Activa</span></td>
+        <td><button class="btn btn-tertiary">Acciones ▾</button></td>
+      </tr>
+      <tr class="" data-user="sebastián ochoa núñez 20203311@aloe.ulima.edu.pe economía" data-status="Activo">
+        <td class="primary-cell">Sebastián Ochoa Núñez</td><td>20203311@aloe.ulima.edu.pe</td><td>Economía</td><td>1</td><td>3</td><td>4.2 ★</td>
+        <td><span class="status status-active">Activo</span></td>
+        <td><button class="btn btn-tertiary">Acciones ▾</button></td>
+      </tr>
+      <tr class="" data-user="renzo cárdenas vílchez 20228844@aloe.ulima.edu.pe contabilidad" data-status="1 reporte">
+        <td class="primary-cell">Renzo Cárdenas Vílchez</td><td>20228844@aloe.ulima.edu.pe</td><td>Contabilidad</td><td>7</td><td>2</td><td>3.9 ★</td>
+        <td><span class="status status-review">1 reporte</span></td>
+        <td><button class="btn btn-tertiary">Acciones ▾</button></td>
+      </tr>
+      <tr class="" data-user="sofía bermúdez chávez 20196655@aloe.ulima.edu.pe ing. industrial" data-status="1 reporte">
+        <td class="primary-cell">Sofía Bermúdez Chávez</td><td>20196655@aloe.ulima.edu.pe</td><td>Ing. Industrial</td><td>2</td><td>5</td><td>4.3 ★</td>
+        <td><span class="status status-review">1 reporte</span></td>
+        <td><button class="btn btn-tertiary">Acciones ▾</button></td>
+      </tr>
+      <tr class="" data-user="joaquín tapia salazar 20211100@aloe.ulima.edu.pe arquitectura" data-status="1 reporte">
+        <td class="primary-cell">Joaquín Tapia Salazar</td><td>20211100@aloe.ulima.edu.pe</td><td>Arquitectura</td><td>0</td><td>2</td><td>4.5 ★</td>
+        <td><span class="status status-review">1 reporte</span></td>
+        <td><button class="btn btn-tertiary">Acciones ▾</button></td>
+      </tr>
+      <tr class="" data-user="marco antonio loayza pinto 20189922@aloe.ulima.edu.pe comunicación" data-status="Bloqueado">
+        <td class="primary-cell">Marco Antonio Loayza Pinto</td><td>20189922@aloe.ulima.edu.pe</td><td>Comunicación</td><td>4</td><td>6</td><td>2.8 ★</td>
+        <td><span class="status status-blocked">Bloqueado</span></td>
+        <td><button class="btn btn-tertiary">Acciones ▾</button></td>
+      </tr>
+      <tr class="" data-user="alejandra cornejo ríos 20207788@aloe.ulima.edu.pe psicología" data-status="Bloqueada">
+        <td class="primary-cell">Alejandra Cornejo Ríos</td><td>20207788@aloe.ulima.edu.pe</td><td>Psicología</td><td>1</td><td>0</td><td>—</td>
+        <td><span class="status status-blocked">Bloqueada</span></td>
+        <td><button class="btn btn-tertiary">Acciones ▾</button></td>
+      </tr></tbody>
+    </table>
+  </div>
+
+  <div class="pagination"><span>Mostrando 1–15 de 248 cuentas</span><button class="page-btn">‹</button><button class="page-btn active">1</button><button class="page-btn">2</button><button class="page-btn">3</button><button class="page-btn">›</button></div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>Universidad de Lima · Panel de administración · Campus Monterrico</div>
+    <div class="footer-links">
+      <a href="#">Normas del tablón</a>
+      <a href="#">Bitácora de moderación</a>
+      <a href="mailto:tablon@ulima.edu.pe">tablon@ulima.edu.pe</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

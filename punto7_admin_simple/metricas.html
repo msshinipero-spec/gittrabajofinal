@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tablero de métricas · Tablón ULima</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-mark"></span><span>Tablón ULima</span></a>
+    <span class="admin-tag">PANEL DE ADMINISTRACIÓN</span>
+    <div class="global-search"><input type="search" placeholder="Buscar por aviso, usuario o código…"></div>
+    <span class="role-chip">ADMINISTRADOR</span>
+    <div class="profile"><span class="avatar">JM</span><span>Julio Mendoza ▾</span></div>
+  </div>
+</header>
+<nav class="admin-nav">
+  <div class="admin-nav-inner">
+    <div class="nav-links">
+      <a class="nav-link " href="index.html">Reportes</a>
+      <a class="nav-link " href="usuarios.html">Usuarios</a>
+      <a class="nav-link active" href="metricas.html">Tablero de métricas</a>
+      <a class="nav-link" href="#">Categorías y cursos</a>
+      <a class="nav-link" href="#">Normas del tablón</a>
+    </div>
+    <div class="nav-note"></div>
+  </div>
+</nav>
+
+<main class="page">
+  <div class="page-header">
+    <div>
+      <h1 class="page-title">Tablero de métricas</h1>
+      <div class="page-subtitle">Datos del 06/08/2026 al 05/09/2026</div>
+    </div>
+    <div class="toolbar-right">
+      <button class="btn btn-secondary">7 días</button>
+      <button class="btn btn-primary">30 días</button>
+      <button class="btn btn-secondary">Todo el periodo</button>
+      <select class="select"><option>06/08/2026 – 05/09/2026</option></select>
+      <button class="btn btn-secondary" data-action="exportMetrics">Exportar</button>
+    </div>
+  </div>
+
+  <section class="stats-row">
+    <div class="card stat-card"><div class="small-label">Avisos publicados</div><div class="stat-value">147</div><div class="stat-meta" style="color:var(--success)">+18 % vs. mes anterior</div></div>
+    <div class="card stat-card"><div class="small-label">Avisos vendidos</div><div class="stat-value">62</div><div class="stat-meta" style="color:var(--success)">42 % de conversión</div></div>
+    <div class="card stat-card"><div class="small-label">Tiempo hasta la venta</div><div class="stat-value">6.4 d</div><div class="stat-meta">mediana 5 días</div></div>
+    <div class="card stat-card"><div class="small-label">Monto acordado</div><div class="stat-value">S/ 4,285</div><div class="stat-meta">ticket promedio S/ 69.00</div></div>
+    <div class="card stat-card"><div class="small-label">Usuarios activos</div><div class="stat-value">186</div><div class="stat-meta" style="color:var(--success)">75 % de las cuentas</div></div>
+  </section>
+
+  <section class="metric-layout">
+    <div style="display:grid;gap:14px">
+      <div class="card metric-card">
+        <h2 class="section-title">Avisos por categoría</h2>
+        <div class="secondary-line" style="margin-bottom:14px">publicados en el rango seleccionado</div>
+        <div class="bar-list"><div class="bar-row"><div>Libros de texto</div><div class="bar-track"><div class="bar-fill" style="width:100.0%"></div></div><div>48</div></div><div class="bar-row"><div>Apuntes y guías</div><div class="bar-track"><div class="bar-fill" style="width:64.6%"></div></div><div>31</div></div><div class="bar-row"><div>Calculadoras</div><div class="bar-track"><div class="bar-fill" style="width:45.8%"></div></div><div>22</div></div><div class="bar-row"><div>Instrumentos de dibujo</div><div class="bar-track"><div class="bar-fill" style="width:35.4%"></div></div><div>17</div></div><div class="bar-row"><div>Uniformes y mandiles</div><div class="bar-track"><div class="bar-fill" style="width:29.2%"></div></div><div>14</div></div><div class="bar-row"><div>Laptops y accesorios</div><div class="bar-track"><div class="bar-fill" style="width:18.8%"></div></div><div>9</div></div><div class="bar-row"><div>Material de laboratorio</div><div class="bar-track"><div class="bar-fill" style="width:12.5%"></div></div><div>6</div></div></div>
+      </div>
+
+      <div class="card metric-card">
+        <h2 class="section-title">Puntos de encuentro más usados</h2>
+        <div class="secondary-line" style="margin-bottom:14px">62 entregas confirmadas</div>
+        <div class="meeting-grid">
+          <div class="meeting-card"><div class="meeting-num">21</div><div>Biblioteca</div><div class="mini-line"><span style="width:100%"></span></div></div>
+          <div class="meeting-card"><div class="meeting-num">15</div><div>Puerta 1</div><div class="mini-line"><span style="width:71%"></span></div></div>
+          <div class="meeting-card"><div class="meeting-num">12</div><div>Cafetería del pabellón E</div><div class="mini-line"><span style="width:57%"></span></div></div>
+          <div class="meeting-card"><div class="meeting-num">9</div><div>Explanada central</div><div class="mini-line"><span style="width:43%"></span></div></div>
+          <div class="meeting-card"><div class="meeting-num">5</div><div>Patio del pabellón H</div><div class="mini-line"><span style="width:24%"></span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <aside style="display:grid;gap:14px;align-content:start">
+      <div class="card metric-card">
+        <h2 class="section-title">Ofertas por estado</h2>
+        <div class="secondary-line">312 ofertas en el rango</div>
+        <div class="donut-wrap" style="margin-top:14px">
+          <div class="donut"><div class="donut-center"><div><div style="font-size:28px">312</div><div class="secondary-line">ofertas</div></div></div></div>
+          <div class="legend">
+            <div class="legend-item"><span class="legend-label"><span class="dot success"></span>Aceptadas</span><strong>106</strong></div>
+            <div class="legend-item"><span class="legend-label"><span class="dot info"></span>Enviadas</span><strong>87</strong></div>
+            <div class="legend-item"><span class="legend-label"><span class="dot warning"></span>Contraofertadas</span><strong>56</strong></div>
+            <div class="legend-item"><span class="legend-label"><span class="dot danger"></span>Rechazadas</span><strong>41</strong></div>
+            <div class="legend-item"><span class="legend-label"><span class="dot neutral"></span>Vencidas</span><strong>22</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card metric-card">
+        <h2 class="section-title">Moderación</h2>
+        <div style="display:grid;gap:10px">
+          <div class="legend-item"><span>Reportes recibidos</span><strong>7</strong></div>
+          <div class="legend-item"><span>Avisos retirados</span><strong>4</strong></div>
+          <div class="legend-item"><span>Cuentas bloqueadas</span><strong>3</strong></div>
+          <div class="legend-item"><span>Acuerdos cancelados</span><strong>5</strong></div>
+          <div class="legend-item"><span>Tiempo medio de resolución</span><strong>1.4 días</strong></div>
+        </div>
+        <div class="alert" style="margin-top:14px">Reputación media del tablón: <strong>4.6 ★</strong> sobre 214 calificaciones emitidas.</div>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>Universidad de Lima · Panel de administración · Campus Monterrico</div>
+    <div class="footer-links">
+      <a href="#">Normas del tablón</a>
+      <a href="#">Bitácora de moderación</a>
+      <a href="mailto:tablon@ulima.edu.pe">tablon@ulima.edu.pe</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
